@@ -78,7 +78,7 @@ body {
 h1 {
     position: relative;
     z-index: 2;
-    color: black;
+    color: rgb(32, 198, 98);
     text-shadow: 
         -1px -1px 0 #fff,
         1px -1px 0 #fff,
