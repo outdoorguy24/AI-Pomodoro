@@ -47,6 +47,7 @@ body {
     border: none;
     width: 80%;
     max-width: 500px;
+    margin: 20px;
 }
 
 .container::before {
@@ -58,7 +59,6 @@ body {
     height: 43.775%;
     background-color: #002868;
     background-image: 
-        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3E%3Cpath d='M5 0l1.18 3.63h3.82l-3.09 2.25 1.18 3.62L5 7.25 1.91 9.5l1.18-3.62L0 3.63h3.82z' fill='white'/%3E%3C/svg%3E"),
         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3E%3Cpath d='M5 0l1.18 3.63h3.82l-3.09 2.25 1.18 3.62L5 7.25 1.91 9.5l1.18-3.62L0 3.63h3.82z' fill='white'/%3E%3C/svg%3E"),
         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3E%3Cpath d='M5 0l1.18 3.63h3.82l-3.09 2.25 1.18 3.62L5 7.25 1.91 9.5l1.18-3.62L0 3.63h3.82z' fill='white'/%3E%3C/svg%3E"),
         url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3E%3Cpath d='M5 0l1.18 3.63h3.82l-3.09 2.25 1.18 3.62L5 7.25 1.91 9.5l1.18-3.62L0 3.63h3.82z' fill='white'/%3E%3C/svg%3E"),
@@ -184,8 +184,9 @@ button:active {
 
 @media (max-width: 600px) {
     .container {
-        width: 90%;
+        width: 85%;
         padding: 2rem;
+        margin: 15px;
     }
 
     h1 {
@@ -199,9 +200,34 @@ button:active {
     .controls {
         flex-direction: column;
         align-items: center;
+        gap: 0.8rem;
     }
 
     button {
-        width: 80%;
+        width: 200px;
+        padding: 0.7rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+.announcement {
+    background-color: #002868;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    font-size: 1.1rem;
+    font-family: Verdana, sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+    .announcement {
+        padding: 10px;
+        font-size: 1rem;
     }
 }
